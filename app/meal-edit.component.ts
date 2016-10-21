@@ -4,7 +4,7 @@ import {  Meal  } from './meal.model';
 @Component({
   selector: 'edit-form',
   template: `
-  <form *ngIf="selectedMeal">
+  <form *ngIf="selectedMeal" class="editForm">
     <h2>Edit this meal</h2>
     <div class="form-group">
       <label for="selectedMealName">Meal Name</label>

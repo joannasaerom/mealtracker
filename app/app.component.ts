@@ -1,35 +1,35 @@
 import {  Component } from '@angular/core';
 import {  Meal  } from './meal.model';
 
-
-
 @Component({
   selector: 'my-app',
   template: `
   <div class="container">
     <div class=row>
     <h1>Meal Tracker</h1>
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-1">
         <meal-list
         [mealList]="meals"
         (clickSender)="editMeal($event)"
         ></meal-list>
       </div>
-      <div class="col-md-6">
-        <calorie-total
-        [caloriesTotal]="totalCalories"
-        (calorieTotalSender)="calculateTotal($event)"
-        ></calorie-total>
-        <calorie-average
+      <div class="col-md-5">
+        <div class="displayCalories">
+          <calorie-total
+          [caloriesTotal]="totalCalories"
+          (calorieTotalSender)="calculateTotal($event)"
+          ></calorie-total>
+          <calorie-average
 
-        ></calorie-average>
+          ></calorie-average>
+        </div>
+        <add-form
+        (newMealSender)="addMeal($event)"
+        ></add-form>
         <edit-form
         [selectedMeal]="selectedMeal"
         (doneClickSender)="finishedEditing()"
         ></edit-form>
-        <add-form
-        (newMealSender)="addMeal($event)"
-        ></add-form>
       </div>
     </div>
   </div>
@@ -38,11 +38,12 @@ import {  Meal  } from './meal.model';
 
 export class AppComponent {
   public meals: Meal[] = [
-    new Meal("Test", "test", 300),
-    new Meal("Test2", "test", 400),
-    new Meal("Test3", "test", 550)
+    new Meal("Test", "test", 500),
+    new Meal("test", "test", 200),
+    new Meal("Test", "test", 800),
+    new Meal("test", "test", 499)
   ];
-  selectedMeal: Meal = this.meals[0];
+  selectedMeal: Meal = null;
   editMeal(clickedMeal: Meal){
     this.selectedMeal = clickedMeal;
   }

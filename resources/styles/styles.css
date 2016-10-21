@@ -8,13 +8,64 @@ h1{
 }
 form{
   display: table;
-  border: 1px solid black;
-  width: 80%;
+  border-radius: 10px;
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 form h2{
   text-align: center;
 }
 input, label{
   display: table-cell;
+  margin-left: 5%;
+}
+label{
+  padding-left: 10%;
+  width: 200px;
+}
+input{
+  width: 90%;
+}
+.displayCalories{
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #FF686B;
+  padding: 15px;
+  box-shadow: 3px 3px 3px #dbdbdb;
+}
+.editForm{
+  background-color: #84DCC6;
+  box-shadow: 3px 3px 3px #dbdbdb;
+}
+.addForm{
+  background-color: #FFA69E;
+  box-shadow: 3px 3px 3px #dbdbdb;
+}
+button{
+  float: right;
+  margin-right: 5%;
+}
+h2{
+  font-size: 35px;
+}
+h2 .editLink{
+  font-size: 15px;
+  color: #84DCC6;
+}
+h2 .editLink:hover{
+  text-decoration:line-through;
+  cursor: crosshair;
+}
+i{
+  color: #707070;
+}
+.caloriesPipe label{
+  display: inline;
+}
+.caloriesPipe{
+  margin-left: -10;
 }
