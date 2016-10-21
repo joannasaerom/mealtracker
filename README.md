@@ -2,6 +2,9 @@
 ####_Joanna Anderson_
 ##Description
 This application allows users to keep track of their daily meal consumption. Users input the meal name, details, and calories. The application allows you to filter by calorie amount and meal time (Breakfast, Lunch, Dinner, Snack). The application also displays the user's total and average calorie consumption for the day.
+
+<img src="img/screenshot.png">
+
 ##Installation Guide
 **To download the project**
 1. Go to [my GitHub](https://github.com/saeromjoa/mealtracker)
