@@ -1,0 +1,20 @@
+body{
+  font-family: 'Catamaran', sans-serif;
+}
+h1{
+  text-align: center;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 100px;
+}
+form{
+  display: table;
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+form h2{
+  text-align: center;
+}
+input, label{
+  display: table-cell;
+}

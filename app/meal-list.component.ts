@@ -4,8 +4,8 @@ import {  Meal  } from './meal.model';
 @Component ({
   selector: 'meal-list',
   template: `
-  <div *ngFor="let currentMeal of meals">
-    <h2>Meal Name: {{currentMeal.name}}</h2>
+  <div *ngFor="let currentMeal of mealList">
+    <h2 (click)="editMeal(currentMeal)">Meal Name: {{currentMeal.name}}</h2>
     <h3>Details: {{currentMeal.detail}}</h3>
     <h3>Calories: {{currentMeal.calories}}</h3>
   </div>
@@ -13,8 +13,10 @@ import {  Meal  } from './meal.model';
 })
 
 export class MealListComponent{
-  public meals: Meal[] = [
-    new Meal("Test", "test", 300),
-    new Meal("Test2", "test", 400)
-  ];
+  @Input() mealList: Meal[];
+  @Output() clickSender = new EventEmitter();
+
+  editMeal(mealToEdit: Meal){
+    this.clickSender.emit(mealToEdit);
+  }
 }
