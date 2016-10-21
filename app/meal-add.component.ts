@@ -5,7 +5,7 @@ import {  Meal  } from './meal.model';
   selector: 'add-form',
   template:  `
   <form class="addForm">
-    <h2>Add a meal</h2>
+    <h2>Add a Meal</h2>
     <div class="form-group">
       <label for="mealName">Meal Name</label>
       <input #mealName type="text" placeholder="Example: Hamburger">
@@ -41,7 +41,8 @@ export class MealAddComponent {
   @Output() newMealSender = new EventEmitter();
   addClick(name: string, detail: string, calories: string, mealTime: string){
     var parsedCalories: number = Number(calories);
-    var newMeal: Meal = new Meal(name, detail, parsedCalories, mealTime);
+    var recordedTime: Date = new Date();
+    var newMeal: Meal = new Meal(name, detail, parsedCalories, mealTime, recordedTime);
     this.newMealSender.emit(newMeal);
   }
 }

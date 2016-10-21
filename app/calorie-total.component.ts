@@ -11,7 +11,6 @@ import {  Meal  } from './meal.model';
 export class CalorieTotalComponent {
   @Input() mealsConsumed: Meal[];
 
-
   calculateTotal(mealsConsumed: Meal[]){
     var totalCalories = 0;
     for (var i = 0; i < mealsConsumed.length; i++){

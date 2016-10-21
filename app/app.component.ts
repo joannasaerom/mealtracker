@@ -37,12 +37,7 @@ import {  Meal  } from './meal.model';
 })
 
 export class AppComponent {
-  public meals: Meal[] = [
-    new Meal("Test", "test", 500, "Breakfast"),
-    new Meal("test", "test", 200, "Lunch"),
-    new Meal("Test", "test", 800, "Dinner"),
-    new Meal("test", "test", 499, "Snack")
-  ];
+  public meals: Meal[] = [];
   selectedMeal: Meal = null;
   editMeal(clickedMeal: Meal){
     this.selectedMeal = clickedMeal;

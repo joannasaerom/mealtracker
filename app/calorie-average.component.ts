@@ -1,5 +1,5 @@
 import {  Component, Input } from '@angular/core';
-import {  Meal  } from './meal.model';
+import { Meal } from './meal.model';
 
 @Component({
   selector: 'calorie-average',

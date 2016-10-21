@@ -1,10 +1,12 @@
 body{
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 h1{
   text-align: center;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Merriweather', serif;
   font-size: 100px;
+  text-transform: uppercase;
+  color: #0D3A49;
 }
 form{
   display: table;
@@ -29,6 +31,10 @@ label{
 input, select{
   width: 90%;
 }
+select{
+  border-radius: 0px;
+  background-color: white;
+}
 input:focus, select:focus{
   outline: none;
 }
@@ -37,24 +43,24 @@ input:focus, select:focus{
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
-  background-color: #2541B2;
+  background-color: #EA7983;
   padding: 15px;
-  margin-top: 30px;
   box-shadow: 3px 3px 3px #dbdbdb;
 }
 .editForm{
-  background-color: #06BEE1;
+  background-color: #0092A5;
 }
 .editForm button, .editForm button:hover, .editForm button:active{
-  border: 3px solid #0594af;
+  border: 3px solid #007b8c;
   background-color: rgba(255, 255, 255, 1);
-  color: #0594af;
+  color: #007b8c;
   border-radius: 10px;
+  cursor: crosshair;
 }
 .resources{
   width: 100%;
   border-radius: 10px;
-  background-color: #03256C;
+  background-color: #456990;
   padding: 15px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -64,16 +70,17 @@ input:focus, select:focus{
   text-align: center;
 }
 .addForm{
-  background-color: #1768AC;
+  background-color: #BEE0B3;
 }
 .editForm label, .addForm label{
   color: white;
 }
 .addForm button, .addForm button:hover, .addForm button:active{
-  border: 3px solid #114d7f;
+  border: 3px solid #8fcc7b;
   background-color: rgba(255, 255, 255, 1);
-  color: #114d7f;
+  color: #8fcc7b;
   border-radius: 10px;
+  cursor: crosshair;
 }
 .addForm h2, .displayCalories h2, .editForm h2, .resources h2{
   color: white;
@@ -83,11 +90,11 @@ button{
   margin-right: 5%;
 }
 h2{
-  font-size: 35px;
+  font-size: 25px;
 }
 h2 .editLink{
   font-size: 15px;
-  color: #06BEE1;
+  color: #0092A5;
 }
 h2 .editLink:hover{
   text-decoration:line-through;
@@ -111,4 +118,12 @@ a, a:hover, a:active, a:focus {
 }
 a:hover{
   text-decoration: none;
+  cursor: crosshair;
+}
+h3{
+  font-size: 20px;
+  line-height: 0.25;
+}
+h4{
+  font-size: 15px;
 }

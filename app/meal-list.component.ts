@@ -27,6 +27,7 @@ import {  Meal  } from './meal.model';
     <h3>Meal Time: {{currentMeal.mealTime}}</h3>
     <h3>Details: {{currentMeal.detail}}</h3>
     <h3>Calories: {{currentMeal.calories}} kcal</h3>
+    <h4>Recorded On: {{currentMeal.recordedAt | date:'fullDate' }}</h4>
   </div>
   `
 })
