@@ -1,5 +1,5 @@
 {
-  "name": "angular-todo",
+  "name": "mealtracker",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
