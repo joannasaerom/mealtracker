@@ -19,7 +19,7 @@ import {  Meal  } from './meal.model';
           [mealsConsumed]="meals"
           ></calorie-total>
           <calorie-average
-
+          [mealsConsumed]="meals"
           ></calorie-average>
         </div>
         <add-form
@@ -37,10 +37,10 @@ import {  Meal  } from './meal.model';
 
 export class AppComponent {
   public meals: Meal[] = [
-    // new Meal("Test", "test", 500, "Breakfast"),
-    // new Meal("test", "test", 200, "Lunch"),
-    // new Meal("Test", "test", 800, "Dinner"),
-    // new Meal("test", "test", 499, "Snack")
+    new Meal("Test", "test", 500, "Breakfast"),
+    new Meal("test", "test", 200, "Lunch"),
+    new Meal("Test", "test", 800, "Dinner"),
+    new Meal("test", "test", 499, "Snack")
   ];
   selectedMeal: Meal = null;
   editMeal(clickedMeal: Meal){

@@ -4,7 +4,7 @@ import {  Meal  } from './meal.model';
 @Component({
   selector: 'calorie-total',
   template: `
-  <h2> Total Calories: {{calculateTotal(mealsConsumed)}} kcal</h2>
+  <h2>Total Calories: {{calculateTotal(mealsConsumed)}} kcal</h2>
   `
 })
 
