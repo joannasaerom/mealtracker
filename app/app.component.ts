@@ -22,6 +22,7 @@ import {  Meal  } from './meal.model';
           [mealsConsumed]="meals"
           ></calorie-average>
         </div>
+        <resources></resources>
         <add-form
         (newMealSender)="addMeal($event)"
         ></add-form>

@@ -9,6 +9,7 @@ import {  MealEditComponent } from './meal-edit.component';
 import {  MealAddComponent  } from './meal-add.component';
 import {  CaloriePipe } from './calorie.pipe';
 import { MealTimePipe } from './meal-time.pipe';
+import {  ResourcesComponent  } from './resources.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { MealTimePipe } from './meal-time.pipe';
     MealEditComponent,
     MealAddComponent,
     CaloriePipe,
-    MealTimePipe
+    MealTimePipe,
+    ResourcesComponent
   ],
   bootstrap: [AppComponent]
 })

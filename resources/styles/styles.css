@@ -13,6 +13,7 @@ form{
   margin: 0 auto;
   margin-bottom: 10px;
   padding: 10px;
+  box-shadow: 3px 3px 3px #dbdbdb;
 }
 form h2{
   text-align: center;
@@ -36,32 +37,45 @@ input:focus, select:focus{
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
-  background-color: #FF686B;
+  background-color: #2541B2;
   padding: 15px;
-  box-shadow: 3px 3px 3px #dbdbdb;
   margin-top: 30px;
+  box-shadow: 3px 3px 3px #dbdbdb;
 }
 .editForm{
-  background-color: #84DCC6;
-  box-shadow: 3px 3px 3px #dbdbdb;
+  background-color: #06BEE1;
 }
 .editForm button, .editForm button:hover, .editForm button:active{
-  border: 3px solid #48cbaa;
+  border: 3px solid #0594af;
   background-color: rgba(255, 255, 255, 1);
-  color: #48cbaa;
+  color: #0594af;
   border-radius: 10px;
 }
-.addForm{
-  background-color: #FFA69E;
+.resources{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #03256C;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   box-shadow: 3px 3px 3px #dbdbdb;
 }
+.resources h2{
+  text-align: center;
+}
+.addForm{
+  background-color: #1768AC;
+}
+.editForm label, .addForm label{
+  color: white;
+}
 .addForm button, .addForm button:hover, .addForm button:active{
-  border: 3px solid #ff776b;
+  border: 3px solid #114d7f;
   background-color: rgba(255, 255, 255, 1);
-  color: #ff776b;
+  color: #114d7f;
   border-radius: 10px;
 }
-.addForm h2, .displayCalories h2, .editForm h2{
+.addForm h2, .displayCalories h2, .editForm h2, .resources h2{
   color: white;
 }
 button{
@@ -73,7 +87,7 @@ h2{
 }
 h2 .editLink{
   font-size: 15px;
-  color: #84DCC6;
+  color: #06BEE1;
 }
 h2 .editLink:hover{
   text-decoration:line-through;
@@ -91,4 +105,10 @@ i{
 }
 .caloriesPipe, .mealTimePipe {
   display: inline;
+}
+a, a:hover, a:active, a:focus {
+  color: white;
+}
+a:hover{
+  text-decoration: none;
 }
