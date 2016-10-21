@@ -12,10 +12,21 @@ import {  Meal  } from './meal.model';
       <option value="lowCalories"> Less than 500 kcal</option>
     </select>
   </div>
-  <div *ngFor="let currentMeal of mealList | calories:selectedCalories">
+  <div class="mealTimePipe">
+  <label>Filter by Meal Time:</label>
+  <select (change)="onMealChange($event.target.value)">
+    <option value="all">Show All</option>
+    <option value="Breakfast">Breakfast</option>
+    <option value="Lunch">Lunch</option>
+    <option value="Dinner">Dinner</option>
+    <option value="Snack">Snack</option>
+  </select>
+</div>
+  <div *ngFor="let currentMeal of mealList | calories:selectedCalories | mealTime:selectedMealTime">
     <h2><i class="fa fa-cutlery" aria-hidden="true"></i> {{currentMeal.name}} <span (click)="editMeal(currentMeal)" class="editLink">Edit</span></h2>
+    <h3>Meal Time: {{currentMeal.mealTime}}</h3>
     <h3>Details: {{currentMeal.detail}}</h3>
-    <h3>Calories: {{currentMeal.calories}}</h3>
+    <h3>Calories: {{currentMeal.calories}} kcal</h3>
   </div>
   `
 })
@@ -30,5 +41,9 @@ export class MealListComponent{
   public selectedCalories: string = "all";
   onChange(optionFromMenu){
     this.selectedCalories = optionFromMenu;
+  }
+  public selectedMealTime: string = "all";
+  onMealChange(optionFromMenu){
+    this.selectedMealTime = optionFromMenu;
   }
 }

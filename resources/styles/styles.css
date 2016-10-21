@@ -17,7 +17,7 @@ form{
 form h2{
   text-align: center;
 }
-input, label{
+input, label, select{
   display: table-cell;
   margin-left: 5%;
 }
@@ -25,8 +25,11 @@ label{
   padding-left: 10%;
   width: 200px;
 }
-input{
+input, select{
   width: 90%;
+}
+input:focus, select:focus{
+  outline: none;
 }
 .displayCalories{
   width: 100%;
@@ -36,14 +39,30 @@ input{
   background-color: #FF686B;
   padding: 15px;
   box-shadow: 3px 3px 3px #dbdbdb;
+  margin-top: 30px;
 }
 .editForm{
   background-color: #84DCC6;
   box-shadow: 3px 3px 3px #dbdbdb;
 }
+.editForm button, .editForm button:hover, .editForm button:active{
+  border: 3px solid #48cbaa;
+  background-color: rgba(255, 255, 255, 1);
+  color: #48cbaa;
+  border-radius: 10px;
+}
 .addForm{
   background-color: #FFA69E;
   box-shadow: 3px 3px 3px #dbdbdb;
+}
+.addForm button, .addForm button:hover, .addForm button:active{
+  border: 3px solid #ff776b;
+  background-color: rgba(255, 255, 255, 1);
+  color: #ff776b;
+  border-radius: 10px;
+}
+.addForm h2, .displayCalories h2, .editForm h2{
+  color: white;
 }
 button{
   float: right;
@@ -63,9 +82,13 @@ h2 .editLink:hover{
 i{
   color: #707070;
 }
-.caloriesPipe label{
+.caloriesPipe label, .mealTimePipe label{
   display: inline;
+  padding: 0;
 }
-.caloriesPipe{
-  margin-left: -10;
+.caloriesPipe select, .mealTimePipe select{
+  width: 20%;
+}
+.caloriesPipe, .mealTimePipe {
+  display: inline;
 }

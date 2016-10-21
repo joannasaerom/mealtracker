@@ -8,6 +8,7 @@ import {  CalorieAverageComponent } from './calorie-average.component';
 import {  MealEditComponent } from './meal-edit.component';
 import {  MealAddComponent  } from './meal-add.component';
 import {  CaloriePipe } from './calorie.pipe';
+import { MealTimePipe } from './meal-time.pipe';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {  CaloriePipe } from './calorie.pipe';
     CalorieAverageComponent,
     MealEditComponent,
     MealAddComponent,
-    CaloriePipe
+    CaloriePipe,
+    MealTimePipe
   ],
   bootstrap: [AppComponent]
 })

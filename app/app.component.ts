@@ -16,8 +16,7 @@ import {  Meal  } from './meal.model';
       <div class="col-md-5">
         <div class="displayCalories">
           <calorie-total
-          [caloriesTotal]="totalCalories"
-          (calorieTotalSender)="calculateTotal($event)"
+          [mealsConsumed]="meals"
           ></calorie-total>
           <calorie-average
 
@@ -38,10 +37,10 @@ import {  Meal  } from './meal.model';
 
 export class AppComponent {
   public meals: Meal[] = [
-    new Meal("Test", "test", 500),
-    new Meal("test", "test", 200),
-    new Meal("Test", "test", 800),
-    new Meal("test", "test", 499)
+    // new Meal("Test", "test", 500, "Breakfast"),
+    // new Meal("test", "test", 200, "Lunch"),
+    // new Meal("Test", "test", 800, "Dinner"),
+    // new Meal("test", "test", 499, "Snack")
   ];
   selectedMeal: Meal = null;
   editMeal(clickedMeal: Meal){
@@ -50,18 +49,7 @@ export class AppComponent {
   finishedEditing(){
     this.selectedMeal = null;
   }
-  // caloriesList: number[];
   addMeal(addedMeal: Meal){
     this.meals.push(addedMeal);
-    // this.caloriesList.push(addedMeal.calories);
   }
-
-  // public totalCalories: number;
-  // calculateTotal(caloriesList: number[]){
-  //   for (let calorie of this.caloriesList){
-  //     this.totalCalories += calorie;
-  //     return this.totalCalories;
-  //     console.log(totalCalories);
-  //   }
-  // }
 }

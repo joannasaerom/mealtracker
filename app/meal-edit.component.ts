@@ -11,6 +11,15 @@ import {  Meal  } from './meal.model';
       <input id="selectedMealName" name="selectedMealName" [(ngModel)]="selectedMeal.name">
     </div>
     <div class="form-group">
+      <label for="selectedMealTime">Meal time</label>
+      <select [(ngModel)]="selectedMeal.mealTime" name="selectedMealTime">
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Snack</option>
+      </select>
+    </div>
+    <div class="form-group">
       <label for="selectedMealDetail">Meal Details</label>
       <input id="selectedMealDetail" name="selectedMealDetail" [(ngModel)]="selectedMeal.detail">
     </div>
